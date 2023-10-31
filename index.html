@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Sans+MS" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/68313.png">
+    <title>formulario de Promedio</title>
+</head>
+<body>
+    <header>
+        <h1>formulario de promedio - tecnologías Web</h1>
+        <th><img src="imagenes/IMG-20230615-WA0008.jpg"alt="" width="150px">
+        <th><img src="imagenes/logocft.PNG"alt="" width="195px">
+    </header>
+    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#estudiantes">estudiantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#actividades">actividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#material">material</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ingreso de notas">ingreso de notas</a>
+        </li>
+      </ul>
+    <main>
+        <form id="calculator-form">
+            <label for="student-name">Nombre del estudiante:</label>
+            <input type="text" id="student-name" required>
+            <label for="student-apellid">Apellido del estudiante:</label>
+            <input type="text" id="student-apellid" required>
+            <label for="subject">Asignatura:</label>
+            <input type="text" id="subject" required>
+
+            <h2>Notas por Unidad:</h2>
+            <table>
+                <tr>
+                    <th>Unidad</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+                <tr>
+                    <td>Unidad 1 (%33)</td>
+                    <td><input type="number" id="unit1-note1" step="0.1" placeholder="12%" required></td>
+                    <td><input type="number" id="unit1-note2" step="0.1" placeholder="21%" required></td>
+                </tr>
+                <tr>
+                    <td>Unidad 2 (%33)</td>
+                    <td><input type="number" id="unit2-note1" step="0.1" placeholder="12%"required></td>
+                    <td><input type="number" id="unit2-note2" step="0.1" placeholder="21%"required></td>
+                </tr>
+                <tr>
+                    <td>Unidad 3 (%34)</td>
+                    <td><input type="number" id="unit3-note1" step="0.1" placeholder="13%"required></td>
+                    <td><input type="number" id="unit3-note2" step="0.1" placeholder="21%"required></td>
+                </tr>
+            </table>
+            <button type="submit">Calcular Promedio</button>
+        </form>
+        <div id="results" style="display: none;">
+            <h2>Resultados:</h2>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
